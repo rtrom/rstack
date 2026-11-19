@@ -67,7 +67,7 @@ Match the task to one playbook in `playbooks/` (relative to this skill), open it
 
 Every code playbook ends with `/rstack:review`, then `/rstack:pr`.
 
-To run another rstack skill mid-task, call it with the Skill tool (`rstack:review`, `rstack:pr`, `rstack:arena`, `rstack:handoff`, and the discipline skills allow this). The operator-only skills (`grill`, `spec`, `tickets`, `run-spec`, `retro`, `setup`, `pickup`) refuse model invocation; when a playbook routes to one, Read its `SKILL.md` from the plugin's `skills/` folder and follow it.
+To run another rstack skill mid-task, call it with the Skill tool (`rstack:review`, `rstack:pr`, `rstack:arena`, `rstack:handoff`, and the discipline skills allow this). The operator-only skills (`grill`, `spec`, `tickets`, `run-spec`, `retro`, `setup`, `pickup`) refuse model invocation; when a playbook routes to one, Read its `SKILL.md` from the sibling folder next to this skill's folder and follow it.
 
 ## Outcome record
 

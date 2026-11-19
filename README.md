@@ -12,17 +12,28 @@ It merges three sources into one pipeline with no duplicate skills:
 
 ## Install
 
-```bash
-# from a local clone
-/plugin marketplace add /path/to/rstack
-/plugin install rstack@rstack
+**Plugin (recommended).** In Claude Code:
 
-# or after pushing to GitHub
-/plugin marketplace add <you>/rstack
+```
+/plugin marketplace add rtrom/rstack
 /plugin install rstack@rstack
 ```
 
-Install at **user** scope if you'll use the CAO layer. Then, in each repo: `/rstack:setup`.
+Same thing from a shell: `claude plugin marketplace add rtrom/rstack && claude plugin install rstack@rstack`.
+
+**Installer scripts (fallback).** From a clone:
+
+```bash
+./install.sh            # macOS / Linux / Git Bash
+.\install.ps1           # Windows PowerShell
+```
+
+They use the `claude` CLI when it's on PATH. Without it, or with `--copy` / `-Copy`, they copy everything into `~/.claude` instead: skills and agents get an `rstack-` prefix (`/rstack-build`, `rstack-implementer`) and the guard hook is merged into `~/.claude/settings.json` (a `.bak` is written first, other settings are kept). Rerunning updates in place. `--uninstall` / `-Uninstall` removes a copy install.
+
+Piped install works only while the repo is public:
+`curl -fsSL https://raw.githubusercontent.com/rtrom/rstack/main/install.sh | bash`
+
+Install at **user** scope if you'll use the CAO layer. Then, in each repo: `/rstack:setup` (or `/rstack-setup` for a copy install).
 
 ## The pipeline
 
