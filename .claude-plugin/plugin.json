@@ -1,0 +1,8 @@
+{
+  "name": "rstack",
+  "version": "0.1.0",
+  "description": "Align, spec, slice, build, prove, review, ship, learn. A Claude Code workflow built from pstack's rigor, Matt Pocock's skills, and CAO's supervisor/worker orchestration.",
+  "author": { "name": "Rhett" },
+  "license": "MIT",
+  "keywords": ["workflow", "tdd", "code-review", "orchestration", "subagents", "spec"]
+}

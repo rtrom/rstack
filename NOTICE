@@ -1,0 +1,12 @@
+rstack adapts ideas, workflow structure, and terminology from:
+
+- pstack (https://github.com/cursor/plugins/tree/main/pstack)
+  MIT License, Copyright (c) 2026 Lauren Tan
+
+- mattpocock/skills (https://github.com/mattpocock/skills)
+  MIT License, Copyright (c) 2026 Matt Pocock
+
+- CLI Agent Orchestrator (https://github.com/awslabs/cli-agent-orchestrator)
+  Apache License 2.0, Copyright Amazon.com, Inc. or its affiliates
+
+The text in this repository is original writing based on those projects.

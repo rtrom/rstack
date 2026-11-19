@@ -1,0 +1,13 @@
+{
+  "name": "rstack",
+  "owner": { "name": "Rhett" },
+  "description": "Personal agentic engineering workflow.",
+  "plugins": [
+    {
+      "name": "rstack",
+      "source": "./",
+      "description": "Align, spec, slice, build, prove, review, ship, learn.",
+      "category": "engineering"
+    }
+  ]
+}
